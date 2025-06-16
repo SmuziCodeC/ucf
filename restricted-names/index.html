@@ -1,0 +1,287 @@
+<html lang="ru"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCF - Unity Chickfight</title>
+    <style>/* Общие стили */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #fefefe;
+    color: #333;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Шапка */
+header {
+    background: url(https://s.iimg.su/s/16/XtTUTBNwEoppMsyAXE9JcEFZ8nAQaq50mZNC5SMw.jpg)  no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+/* Тёмный оверлей поверх картинки */
+header::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Чёрный с прозрачностью */
+    z-index: 1;
+}
+
+/* Контент внутри хедера — поверх оверлея */
+header > .container {
+    position: relative;
+    z-index: 2;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1rem;
+    margin-top: 5px;
+    opacity: 0.8;
+}
+
+/* Навигация */
+nav {
+    background: #2c2c2c;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 15px;
+    display: block;
+}
+
+nav a:hover {
+    background: #444;
+}
+
+/* Секции */
+section {
+    margin-top: 30px;
+}
+
+h2 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.mods-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.mod-card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Форма и контакты */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background: #b32d2d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #d11f1f;
+}
+
+/* Подвал */
+footer {
+    background: #1e1e1e;
+    color: #aaa;
+    text-align: center;
+    padding: 15px 10px;
+    margin-top: 40px;
+}</style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>UCF — Unity Chickfight</h1>
+        <p>Сообщество моддеров Chicken Gun</p>
+    </div>
+</header>
+
+<nav>
+    <div class="container">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="forbidden-names.html">Запрещённые названия</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main>
+    <section id="about" class="container">
+        <h2>Реестр занятых и запрещённых названий приватных серверов</h2>
+        <p>
+            Этот список содержит названия, которые использовать <strong>нельзя</strong>, потому что они уже заняты или используются в других проектах.
+        </p>
+        <p>
+            Автор реестра — <strong>Артик (Артём)</strong>. Он регулярно обновляет список. Возможны опечатки или ошибки, но данные актуальны на момент последнего обновления.
+        </p>
+
+        <ol class="forbidden-list">
+            <li>
+                <strong>"Chicken Gun Private"</strong> / <strong>"Delta Gun"</strong> / <strong>"Chicken Gun Privatochka"</strong>
+                <br><em>Автор: Артик</em>
+                <br><small>Уже используется или слишком близко к оригиналу.</small>
+            </li>
+            <li>
+                <strong>"Server Gun"</strong>
+                <br><em>Автор: Фчик</em>
+                <br><small>Занято или слишком общее название.</small>
+            </li>
+            <li>
+                <strong>"Legacy Gun"</strong> / <strong>"Devlog ChickFight"</strong>
+                <br><em>Автор: Уно228</em>
+                <br><small>Используется в стороннем проекте.</small>
+            </li>
+            <li>
+                <strong>"Easter Chicken Gun"</strong>
+                <br><em>Авторы: Mr.Robot, Вроде Артик</em>
+                <br><small>Используется в официальных мероприятиях или тестовых сборках.</small>
+            </li>
+            <li>
+                <strong>"Chickens Battleground"</strong>
+                <br><em>Авторы: SnowSans098, NickolaySoftware, mrsuperbuddy, Артик, Фчик42</em>
+                <br><small>Много авторов, название зарезервировано.</small>
+            </li>
+            <li>
+                <strong>"Palau Gun"</strong>
+                <br><em>Автор: СУНЬ</em>
+                <br><small>Используется в одном из проектов.</small>
+            </li>
+            <li>
+                <strong>"Art Mod"</strong>
+                <br><em>Автор: Артик</em>
+                <br><small>Используется в другом контексте.</small>
+            </li>
+            <li>
+                <strong>"Soup Gun"</strong>
+                <br><em>Автор: Супчик</em>
+                <br><small>Не состоит в UCF, но название занято.</small>
+            </li>
+            <li>
+                <strong>"Fruzer Gun"</strong>
+                <br><em>Автор: Фрузер</em>
+                <br><small>Не состоит в UCF, но название используется.</small>
+            </li>
+            <li>
+                <strong>"Chicken Gun Private Server"</strong>
+                <br><em>Автор: Никита107r (создатель идеи)</em>
+                <br><small>Не состоит в UCF, но название занято.</small>
+            </li>
+            <li>
+                <strong>"Millitary Chicken Gun"</strong>
+                <br><em>Автор: Забыл</em>
+                <br><small>Не состоит в UCF, возможно есть грамматическая ошибка.</small>
+            </li>
+            <li>
+                <strong>"Чикен Сран"</strong>
+                <br><em>Автор: mrsuperbuddy</em>
+                <br><small>Нецензурное выражение, неуместно.</small>
+            </li>
+            <li>
+                <strong>"Lyrad Gun"</strong>
+                <br><em>Автор: Лирад</em>
+                <br><small>Имя автора, используется в проекте.</small>
+            </li>
+            <li>
+                <strong>"Chicken Dust"</strong>
+                <br><em>Автор: Дима (ник неизвестен)</em>
+                <br><small>Не соответствует тематике.</small>
+            </li>
+            <li>
+                <strong>"Egg Gun"</strong>
+                <br><em>Автор: Фчик42</em>
+                <br><small>Может вводить в заблуждение новичков.</small>
+            </li>
+            <li>
+                <strong>"Golden Gun"</strong> / <strong>"SpamGun"</strong>
+                <br><em>Авторы: Лирад (будущая приватка)</em>
+                <br><small>Будет использоваться в будущем.</small>
+            </li>
+            <li>
+                <strong>"Proto Gun"</strong>
+                <br><em>Авторы: Лирад (будущая приватка)</em>
+                <br><small>Планируется к использованию.</small>
+            </li>
+            <li>
+                <strong>"Chicken Firefights"</strong>
+                <br><em>Авторы: Лирад, Уно228</em>
+                <br><small>Название зарезервировано.</small>
+            </li>
+            <li>
+                <strong>"Govno Gan Aoaooaoao"</strong>
+                <br><em>Автор: Лирад</em>
+                <br><small>Шутливое название, но всё равно занято.</small>
+            </li>
+            <li>
+                <strong>"Simple Gun"</strong>
+                <br><em>Автор: renayter</em>
+                <br><small>Общее имя, возможно уже используется.</small>
+            </li>
+            <li>
+                <strong>"Chicken Gun Remastered"</strong>
+                <br><em>Авторы: ДаркЛорд, Лирад</em>
+                <br><small>Зарезервировано для будущего релиза.</small>
+            </li>
+        </ol>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>© 2025 UCF — Unity Chickfight Community</p>
+        <p>Все права защищены</p>
+    </div>
+</footer>
+
+
+</body></html>
