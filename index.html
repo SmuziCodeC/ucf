@@ -1,0 +1,215 @@
+<html lang="ru"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCF - Unity Chickfight</title>
+    <style>/* Общие стили */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #fefefe;
+    color: #333;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Шапка */
+header {
+    background: url(https://s.iimg.su/s/16/XtTUTBNwEoppMsyAXE9JcEFZ8nAQaq50mZNC5SMw.jpg)  no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+/* Тёмный оверлей поверх картинки */
+header::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Чёрный с прозрачностью */
+    z-index: 1;
+}
+
+/* Контент внутри хедера — поверх оверлея */
+header > .container {
+    position: relative;
+    z-index: 2;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1rem;
+    margin-top: 5px;
+    opacity: 0.8;
+}
+
+/* Навигация */
+nav {
+    background: #2c2c2c;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 15px;
+    display: block;
+}
+
+nav a:hover {
+    background: #444;
+}
+
+/* Секции */
+section {
+    margin-top: 30px;
+}
+
+h2 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.mods-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.mod-card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Форма и контакты */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background: #b32d2d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #d11f1f;
+}
+
+/* Подвал */
+footer {
+    background: #1e1e1e;
+    color: #aaa;
+    text-align: center;
+    padding: 15px 10px;
+    margin-top: 40px;
+}</style>
+</head>
+<body><header>
+    <div class="container">
+        <h1>UCF — Unity Chickfight</h1>
+        <p>Сообщество моддеров Chicken Gun</p>
+    </div>
+</header>
+
+<nav>
+    <div class="container">
+        <ul>
+            <li><a href="#about">О проекте</a></li>
+            <li><a href="#mods">Приватки</a></li>
+            <li><a href="#community">Сообщество</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main>
+    <section id="about" class="container">
+        <h2>О проекте</h2>
+        <p>
+            UCF (<strong>Unity Chickfight</strong>) — это закрытое сообщество разработчиков и игроков, занимающихся созданием
+            приватных серверов и модификаций для игры <em>Chicken Gun</em>.
+        </p>
+        <p>
+            Мы делаем новые игровые режимы, карты, баланс персонажей и улучшаем клиент. Игра не ограничивается только петухами и пушками — тут есть всё: от пистолетов до телохранителей (По крайней мере, в одном из приватных серверов.)
+        </p>
+    </section>
+
+    <section id="mods" class="container">
+        <h2>Приватные сервера</h2>
+        <div class="mods-grid">
+            <div class="mod-card">
+                <h3>null</h3>
+                <p>null</p>
+            </div>
+            <div class="mod-card">
+                <h3>null</h3>
+                <p>null</p>
+            </div>
+            <div class="mod-card">
+                <h3>null</h3>
+                <p>null</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="community" class="container">
+        <h2>Сообщество</h2>
+        <p>
+            Сообщество является закрытым. Присоединиться можно только по приглашению. Ссылку на вход в чат выдаёт администратор после проверки активности и интереса к разработке.
+        </p>
+        <p>
+            Здесь обсуждают моддинг, делятся идеями, помогают друг другу и работают над совместными проектами.
+        </p>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Контакты</h2>
+        <p>
+            По всем вопросам обращайтесь через личные сообщения основателю. Активность сообщества ведётся в Telegram.
+        </p>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>© 2025 UCF — Unity Chickfight Community</p>
+        <p>Все права защищены</p>
+    </div>
+</footer>
+
+
+</body></html>
